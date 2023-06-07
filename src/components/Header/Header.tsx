@@ -1,0 +1,39 @@
+import React from "react";
+
+import {
+  HeaderContainer,
+  Logo,
+  LogoWrapper,
+  IconsContainer,
+  RoundIcon,
+} from "./Header.styles";
+import enIcon from "../../images/english.png";
+import ptIcon from "../../images/portuguese.png";
+
+const Header: React.FC = () => {
+  return (
+    <HeaderContainer>
+      <div>
+        <LogoWrapper>
+          <Logo />
+        </LogoWrapper>
+      </div>
+      <div>
+        <IconsContainer>
+          <RoundIcon>
+            <a href="#">
+              <img src={enIcon} alt="English" />
+            </a>
+          </RoundIcon>
+          <RoundIcon>
+            <a href="#">
+              <img src={ptIcon} alt="Portuguese" />
+            </a>
+          </RoundIcon>
+        </IconsContainer>
+      </div>
+    </HeaderContainer>
+  );
+};
+
+export default Header;
