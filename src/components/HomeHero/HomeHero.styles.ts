@@ -19,6 +19,10 @@ export const BackgroundImage = styled.div`
   background-image: url(${heroBanner});
   background-size: cover;
   background-position: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Overlay = styled.div`
@@ -31,6 +35,15 @@ export const Overlay = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  @media (max-width: 768px) {
+    //alterado agora
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    bottom: 0;
+  }
 `;
 
 export const ContentWrapper = styled.div`
@@ -50,9 +63,6 @@ export const ImageContainer = styled.div`
   display: flex;
 
   margin-bottom: 16%;
-  @media (max-width: 768px) {
-    display: none;
-  }
 `;
 
 export const Image = styled.div`
@@ -62,22 +72,36 @@ export const Image = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (max-width: 768px) {
+    //adicionado agora
+    width: 100%;
+    height: 100%;
+    background-position: bottom;
+  }
 `;
 
 export const TextContainer = styled.div`
   margin-left: 20px;
   color: #faf7ee;
   width: 50%;
+  margin-bottom: 70px;
+
+  @media (max-width: 768px) {
+    //alterado agora
+    width: 100%;
+    text-align: left;
+  }
 `;
 
 export const Title = styled.h1`
-  font-size: 42px;
+  font-size: 1.8rem;
   margin-bottom: 10px;
   font-weight: 700;
 `;
 
 export const Description = styled.p`
-  font-size: 22px;
+  font-size: 1rem;
   font-weight: 400;
 `;
 
@@ -91,4 +115,8 @@ export const SmallImage = styled.div`
   background-image: url(${heroLateral});
   background-size: cover;
   background-position: center;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;

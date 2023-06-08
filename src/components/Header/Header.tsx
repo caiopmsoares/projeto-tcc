@@ -9,6 +9,7 @@ import {
 } from "./Header.styles";
 import enIcon from "../../images/english.png";
 import ptIcon from "../../images/portuguese.png";
+import tsIcon from "../../images/translate.png";
 
 const Header: React.FC = () => {
   return (
@@ -28,6 +29,11 @@ const Header: React.FC = () => {
           <RoundIcon>
             <a href="#">
               <img src={ptIcon} alt="Portuguese" />
+            </a>
+          </RoundIcon>
+          <RoundIcon>
+            <a href="#">
+              <img src={tsIcon} alt="Translated" />
             </a>
           </RoundIcon>
         </IconsContainer>

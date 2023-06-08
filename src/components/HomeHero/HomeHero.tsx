@@ -30,8 +30,8 @@ const HomeHero: React.FC = () => {
               taste the deliciousness!
             </Description>
           </TextContainer>
+          <SmallImage />
         </ContentWrapper>
-        <SmallImage />
       </Overlay>
     </HomeHeroContainer>
   );

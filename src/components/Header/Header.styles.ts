@@ -8,6 +8,7 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   padding: 0 100px;
   background-color: #0b132b;
+  border-bottom: 1px solid #faf7ee;
 `;
 
 export const LogoWrapper = styled.div`
@@ -17,8 +18,8 @@ export const LogoWrapper = styled.div`
 `;
 
 export const Logo = styled(LogoSvg)`
-  height: auto;
-  width: auto;
+  height: 90%;
+  width: 90%;
 `;
 
 export const IconsContainer = styled.div`
@@ -28,8 +29,8 @@ export const IconsContainer = styled.div`
 `;
 
 export const RoundIcon = styled.div`
-  height: 50px;
-  width: 50px;
+  height: 100%;
+  width: 100%;
   border-radius: 50%;
   display: flex;
   align-items: center;

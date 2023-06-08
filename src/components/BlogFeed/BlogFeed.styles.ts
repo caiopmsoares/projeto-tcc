@@ -5,6 +5,11 @@ export const BlogPostContainer = styled.div`
   margin: 25%;
   margin-left: 10%;
   margin-top: 100px;
+
+  @media (max-width: 768px) {
+    margin: 10%;
+    margin-bottom: 25%;
+  }
 `;
 
 export const Paragraph = styled.div`

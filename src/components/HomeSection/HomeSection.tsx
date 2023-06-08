@@ -12,6 +12,8 @@ import {
   ReadMore,
 } from "./HomeSection.styles";
 
+import { Link } from "react-router-dom";
+
 import chickenImage from "../../images/chicken.png";
 import chocolateImage from "../../images/chocolate.png";
 import energyImage from "../../images/energy.png";
@@ -40,7 +42,7 @@ const HomeSection: React.FC = () => {
               and satisfying snack.
             </ImageDescription>
             <ReadMore>
-              <a href="../BlogFeed"> READ MORE &gt;</a>
+              <Link to="/section">READ MORE &gt;</Link>
             </ReadMore>
           </ImageWrapper>
         </ImageContainer>
